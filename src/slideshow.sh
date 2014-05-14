@@ -1,6 +1,10 @@
 #!/bin/bash
 # Creates intermediate frames and then video
 
+cd $1
+
+mkdir temp
+
 ls -v *.jpg > filenames.txt
 split -l 10 filenames.txt FILENAMES
 
